@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar{
+    position: absolute;
+}
+
+.navbar b{
+    float: left;
+    font-size: 24px;
+    font-family: 'Poppins';
+    color: black;
+    margin-left: 3vh;
+    margin-top: 2vh;
+}
+
+.navbar i{
+    float: left;
+    margin-right: -15px;
+    margin-top: 3vh;
+    margin-left: 3px;
+    color: orangered;
+    font-size: 22px;
+}
+
+.main{
+    align-items: center;
+    justify-content: center;
+}
+
+.center-box{
+    position: absolute;
+    margin-left: 470px;
+    border-radius: 10px;
+    margin-top: 10vh;
+    background-color: black;
+    height: 500px;
+    width: 400px;
+}
+
+.top{
+    background-color: orangered;
+    height: 50%;
+    width: 100%;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.wrap{
+    position: relative;
+    display: inline-block;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+
+.menu{
+    left: 20px;
+    top: 20px;
+    width:40px;
+    height:30px;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+}
+
+.menu > div{
+    position: absolute;
+    height:3px;
+    background: black;
+    border-radius: 5px;
+    transition: width 0.1s ease;
+}
+
+.menu-li{
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 120px;
+    margin-top: 10px;
+    margin-left: 20px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.menu-li a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Poppins', sans-serif;;
+}
+
+
+.show {display: block;}
+.a{
+    width: 23px;
+}
+.b{
+    width: 16px;
+    top: 8px;
+}
+.c{
+   width: 23px;
+    top: 16px;
+}
+
+.menu:hover div{
+    width: 25px;
+    transition: width 0.5s ease;
+}
+
+.email{
+    margin-left: 58vh;
+    font-size: 22px;
+    margin-top: -2vh;
+}
+
+.email a{
+    color: black;
+}
+
+.logo{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: yellow;
+    left: 39%;
+}
+
+.logo img{
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.name{
+    margin-left: 35%;
+    font-family: 'Poppins';
+    margin-top: 25%;
+}
+
+.name b{
+    margin-left: 2%;
+}
+
+.bottom {
+    background-color: black;
+}
+
+.details{
+    display: block;
+    font-family: 'Poppins';
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin-left: 15px;
+    font-size: 22px;
+}
+
+hr{
+    color: white;
+    width: 50px;
+}
+
+.about{
+    font-family: 'Poppins';
+    display: block;
+    color: whitesmoke;
+    font-size: 18px;
+    margin-left: 15px;
+}
+
+.social-links{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: x-large;
+    padding: 3px;
+}
+
+.social-links a{
+    color: black;
+    padding-right: 8px;
+}
+
+.social-links a i:hover{
+    color: red;
+}
+
+.buttons{
+    display: flex;
+    margin-left: 15px;
+    margin-top: 10px;
+    height: 50px;
+    width: 185px;
+}
+
+.btn1{
+    display: flex;
+    padding: 3px;
+    height: 35px;
+    width: 90px;
+    background: orangered;
+    border-radius: 20px;
+    text-align: center;
+    border: none;
+    margin-right: 5px;
+}
+
+.cv, .projects{
+    font-size: smaller;
+    text-decoration: none;
+    margin: auto;
+    font-family: 'Poppins';
+}
+
+.cv{
+    color: white;
+}
+
+.btn1:hover{
+    width: 185px;
+}
+
+.btn2{
+    display: flex;
+    height: 33px;
+    width: 90px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid orangered;
+    text-align: center;
+    right:0;
+    top: 0;
+}
+
+.projects{
+    color: orangered;
+}
+
+.btn2:hover{
+    width: 185px;
+}
+
+@media only screen and (max-width: 600px){
+    .container,.top{
+        width: 320px;
+    }
+    .menu{
+        height: 40px;
+    }
+    .btns{
+        width: 100%;
+    }
+    .btn1 {
+        width: 120px;
+    }
+    .btn2 {
+        width: 120px;
+    }
+}
