@@ -1,3 +1,3 @@
 # portfolio
 
-#### inspired from [xditya.me](xditya.me).
+#### inspired from [xditya.me](https://www.xditya.me).
